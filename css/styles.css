@@ -3,12 +3,26 @@
   font-size: 18px;
 }
 
-.label img {
+label img {
   vertical-align: top;
-
 }
 
+label {
+  padding: 10px;
+}
 
+.quiz {
+  padding: 10px;
+}
+
+.result {
+  display: none;
+  text-align: center;
+}
+
+.button {
+  text-align: center;
+}
 
 h1 {
   text-align: center;
