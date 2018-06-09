@@ -3,6 +3,12 @@
   font-size: 18px;
 }
 
+.label img {
+  vertical-align: top;
+
+}
+
+
 
 h1 {
   text-align: center;
