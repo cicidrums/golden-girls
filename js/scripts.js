@@ -6,14 +6,14 @@ var jessica = fridaynight4 + print4 + sweater4 + drink4 + trip3;
 
 $(document).ready(function() {
 
-  var answer1 = $("input:radio[name=answer1]:checked").val();
-  var answer2 = $("input:radio[name=answer2]:checked").val();
-  var answer3 = $("input:radio[name=answer3]:checked").val();
-  var answer4 = $("input:radio[name=answer4]:checked").val();
-  var answer5 = $("input:radio[name=answer5]:checked").val();
-
 	$("form#quiz").submit(function(event) {
 		event.preventDefault();
+
+      var answer1 = $("input:radio[name=answer1]:checked").val();
+      var answer2 = $("input:radio[name=answer2]:checked").val();
+      var answer3 = $("input:radio[name=answer3]:checked").val();
+      var answer4 = $("input:radio[name=answer4]:checked").val();
+      var answer5 = $("input:radio[name=answer5]:checked").val();
 
     if (answer1 === "fridaynight2" && answer2 === "print4" && answer3 === "sweater1" && answer4 === "drink1" && answer5 === "trip3") {
       var result = "Sophia";

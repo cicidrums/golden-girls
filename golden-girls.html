@@ -10,104 +10,68 @@
   <body>
     <h1>Which Golden Girl Are You?</h1>
     <h3>Take this quiz to find out!</h3>
-      <div class="quiz">
+      <div class="container">
+
         <form id="quiz">
-          <br/>
-            <ol>
-              <li><h4>Where would we find you on a Friday night?</h4></li>
-                <label>
-                  <input type="radio" name="answer1" value="fridaynight1" checked>
-                  On the dancefloor!
-                </label>
-                <label>
-                  <input type="radio" name="answer1" value="fridaynight2">
-                  At home, reading and clipping coupons!
-                </label>
-                <label>
-                  <input type="radio" name="answer1" value="fridaynight3">
-                  On a hot date!
-                </label>
-                <label>
-                  <input type="radio" name="answer1" value="fridaynight4">
-                  At the opera
-                </label>
+          <div class="form-group">
             <br/>
-              <li><h4>Which wallpaper appeals to you the most?</h4></li>
-                <label>
-                  <input type="radio" name="answer2" value="print1" checked>
-                  <img src="imgs/banana-leaf.jpg" width="150px;">
-                </label>
-                <label>
-                  <input type="radio" name="answer2" value="print2">
-                  <img src="imgs/art-deco.jpg" width="150px;">
-                </label>
-                <label>
-                  <input type="radio" name="answer2" value="print3">
-                  <img src="imgs/shells.jpg" width="150px;">
-                </label>
-                <label>
-                  <input type="radio" name="answer2" value="print4">
-                  <img src="imgs/floral.jpg" height="150px;">
-                </label>
-            <br/>
-              <li><h4>Which sweater is your favorite?</h4></li>
-                <label>
-                  <input type="radio" name="answer3" value="sweater1" checked>
-                  <img src="imgs/sweater-cardigan.jpg" height="250px;">
-                </label>
-                <label>
-                  <input type="radio" name="answer3" value="sweater2">
-                  <img src="imgs/sweater-chicken.jpg" height="250px;">
-                </label>
-                <label>
-                  <input type="radio" name="answer3" value="sweater3">
-                  <img src="imgs/sweater-grey.jpg" height="250px;">
-                </label>
-                <label>
-                  <input type="radio" name="answer3" value="sweater4">
-                  <img src="imgs/sweater-salmon.jpg" height="250px;">
-                </label>
-            <br/>
-              <li><h4>What's your drink?</h4></li>
-                <label>
-                  <input type="radio" name="answer4" value="drink1" checked>
-                  <img src="imgs/drink-gimlet.jpg" height="250px;">
-                  Vodka Gimlet
-                </label>
-                <label>
-                  <input type="radio" name="answer4" value="drink2">
-                  <img src="imgs/drink-maitai.jpg" height="250px;">
-                  Mai Tai
-                </label>
-                <label>
-                  <input type="radio" name="answer4" value="drink3">
-                  <img src="imgs/drink-mintjulep.jpg" height="250px;">
-                  Mint Julep
-                </label>
-                <label>
-                  <input type="radio" name="answer4" value="drink4">
-                  <img src="imgs/drink-whitewine.png" height="250px;">
-                  White Wine
-                </label>
-            <br/>
-              <li><h4>What's your ideal vacation destination?</h4></li>
-                <label>
-                  <input type="radio" name="answer5" value="trip1" checked>
-                  Chillin' at the beach!
-                </label>
-                <label>
-                  <input type="radio" name="answer5" value="trip2">
-                  Caribbean cruise!
-                </label>
-                <label>
-                  <input type="radio" name="answer5" value="trip3">
-                  New York City all the way!
-                </label>
-                <label>
-                  <input type="radio" name="answer5" value="trip4">
-                  Disneyland!
-                </label>
-              </ol>
+              <label for="answer1">Where would we find you on a Friday night?</label>
+              <select class="form-control" id="answer1">
+                <option value="1">On the dancefloor!</option>
+                <option value="2">At home, reading and clipping coupons!</option>
+                <option value="3">On a hot date!</option>
+                <option value="4">At the opera</option>
+              </select>
+              <br/>
+              <label for="answer2">Which wallpaper appeals to you the most?</label>
+              <br/>
+              <table>
+                <tr><td><img src="imgs/banana-leaf.jpg" width="150px;"></td><td><img src="imgs/art-deco.jpg" width="150px;"></td><td><img src="imgs/shells.jpg" width="150px;"></td><td><img src="imgs/floral.jpg" height="150px;"></td></tr>
+                <tr><td>A.</td><td>B.</td><td>C.</td><td>D.</td></tr>
+              </table>
+              <br/>
+              <select class="form-control" id="answer2">
+                <option value="1">A. Banana Leaf</option>
+                <option value="2">B. Art Deco</option>
+                <option value="3">C. 80s shells</option>
+                <option value="4">D. Floral fun</option>
+              </select>
+              <br/>
+              <label for="answer3">Which sweater is your favorite?</label>
+              <br/>
+              <table>
+                <tr><td><img src="imgs/sweater-cardigan.jpg" height="250px;"></td><td><img src="imgs/sweater-chicken.jpg" height="250px;"></td><td><img src="imgs/sweater-grey.jpg" height="250px;"></td><td><img src="imgs/sweater-salmon.jpg" height="250px;"></td></tr>
+                <tr><td>A.</td><td>B.</td><td>C.</td><td>D.</td></tr>
+              </table>
+              <br/>
+              <select class="form-control" id="answer3">
+                <option value="1">A. Pastel Cardigan</option>
+                <option value="2">B. Fun & Themed</option>
+                <option value="3">C. Geometric</option>
+                <option value="4">D. Cozy</option>
+              </select>
+              <br/>
+                <label for="answer4">What's your drink?</label>
+                <br/>
+                <table>
+                <tr><td><img src="imgs/drink-gimlet.jpg" height="250px;"></td><td><img src="imgs/drink-maitai.jpg" height="250px;"></td><td><img src="imgs/drink-mintjulep.jpg" height="250px;"></td><td><img src="imgs/drink-whitewine.png" height="250px;"></td></tr>
+                <tr><td>A.</td><td>B.</td><td>C.</td><td>D.</td></tr>
+                </table>
+                <br/>
+                  <select class="form-control" id="answer4">
+                    <option value="1">A. Vodka Gimlet</option>
+                    <option value="2">B. Mai Tai</option>
+                    <option value="3">C. Mint Julep</option>
+                    <option value="4">D. White Wine</option>
+                  </select>
+              <br/>
+                <label for="answer5">What's your ideal vacation destination?</label>
+                <select class="form-control" id="answer5">
+                  <option value="1">A. Chillin' at the beach!</option>
+                  <option value="2">B. Caribbean Cruise</option>
+                  <option value="3">C. NYC baby!</option>
+                  <option value="4">D. Disneyland</option>
+                </select>
 
           <div class="button">
             <button type="submit" class="btn btn-success btn-lg">See your results!</button>
