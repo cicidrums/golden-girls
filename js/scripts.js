@@ -1,31 +1,35 @@
-var sophia = fridaynight2 + print4 + sweater1 + drink1 + trip3;
-var blanche = fridaynight1 + print1 + sweater3 + drink3 + trip2;
-var dorothy = fridaynight4 + print3 + sweater3 + drink4 + trip1;
-var rose = fridaynight2 + print2 + sweater2 + drink2 + trip4;
-var jessica = fridaynight4 + print4 + sweater4 + drink4 + trip3;
 
 $(document).ready(function() {
 
 	$("form#quiz").submit(function(event) {
 		event.preventDefault();
 
-      var answer1 = $("input:radio[name=answer1]:checked").val();
-      var answer2 = $("input:radio[name=answer2]:checked").val();
-      var answer3 = $("input:radio[name=answer3]:checked").val();
-      var answer4 = $("input:radio[name=answer4]:checked").val();
-      var answer5 = $("input:radio[name=answer5]:checked").val();
+		var sophia = 2 + 4 + 1 + 1 + 3; //11//
+		var blanche = 1 + 1 + 3 + 3 + 2; //10//
+		var dorothy = 4 + 3 + 3 + 4 + 1; //15//
+		var rose = 2 + 2 + 2 + 2 + 4; //12//
+		var jessica = 4 + 4 + 4 + 4 + 3; //19//
+		var result = answer1 + answer2 + answer3 + answer4 + answer5;
 
-    if (answer1 === "fridaynight2" && answer2 === "print4" && answer3 === "sweater1" && answer4 === "drink1" && answer5 === "trip3") {
-      var result = "Sophia";
-    } else if (answer1 === "fridaynight1" && answer2 === "print1" && answer3 === "sweater3" && answer4 === "drink3" && answer5 === "trip2") {
-      var result = "Blanche";
-    } else if (answer1 === "fridaynight4" && answer2 === "print3" && answer3 === "sweater3" && answer4 === "drink4" && answer5 === "trip1") {
-      var result = "Dorothy";
-    } else if (answer1 === "fridaynight2" && answer2 === "print2" && answer3 === "sweater2" && answer4 === "drink2" && answer5 === "trip4") {
-      var result = "Rose";
-    } else if (answer1 === "fridaynight4" && answer2 === "print4" && answer3 === "sweater4" && answer4 === "drink4" && answer5 === "trip3") {
-      var result = "You're actually Jessica Fletcher from Murder, She Wrote!";
-    }
+		if (result <= 10) {
+		  $("span#blanche").show();
+		  $("span#dorothy, span#rose, span#sophia, span#jb").hide();
+		} else if (result > 10 && result < 12) {
+		  $("span#sophia").show();
+		  $("span#rose, span#dorothy, span#jb, span#blanche").hide();
+		} else if (result === 12) {
+		  $("span#rose").show();
+		  $("span#dorothy, span#blanche, span#sophia, span#jb").hide();
+		} else if (result != 12 && result > 10 && result < 15) {
+		  $("span#dorothy").show();
+		  $("span#rose, span#sophia, span#jb, span#blanche").hide();
+		} else {
+		  $("span#jb").show();
+		  $("span#sophia, span#blanche, span#dorothy, span#rose").hide();
+		}
 
 		$("span.result").text(result);
-    $(".result").show();
+		$(".result").show();
+
+	});
+});

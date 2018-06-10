@@ -1,8 +1,20 @@
+.result {
+  display: hidden;
+}
+
+span#sophia, span#dorothy, span#rose, span#blanche, span#jb {
+  display: none;
+}
+
 td {
   text-align: center;
   padding: 10px;
 }
 
+.form-control {
+  width: 25%;
+  margin-left: 50px;
+}
 
 .radio label {
   margin-right: 10px;
