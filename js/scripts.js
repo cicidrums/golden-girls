@@ -4,11 +4,12 @@ $(document).ready(function() {
 	$("form#quiz").submit(function(event) {
 		event.preventDefault();
 
-		var sophia = 2 + 4 + 1 + 1 + 3; //11//
-		var blanche = 1 + 1 + 3 + 3 + 2; //10//
-		var dorothy = 4 + 3 + 3 + 4 + 1; //15//
-		var rose = 2 + 2 + 2 + 2 + 4; //12//
-		var jessica = 4 + 4 + 4 + 4 + 3; //19//
+		var answer1 = parseInt($("select#question1").val());
+		var answer2 = parseInt($("select#question2").val());
+		var answer3 = parseInt($("select#question3").val());
+		var answer4 = parseInt($("select#question4").val());
+		var answer5 = parseInt($("select#question5").val());
+
 		var result = answer1 + answer2 + answer3 + answer4 + answer5;
 
 		if (result <= 10) {
